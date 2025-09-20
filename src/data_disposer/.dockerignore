@@ -1,0 +1,12 @@
+.git
+.idea
+.vscode
+.gitignore
+.dockerignore
+files/logs
+Dockerfile
+docker-compose.yml
+__pycache__
+push_docker_images.sh
+intro.txt
+custom_bashrc

@@ -1,0 +1,11 @@
+{
+  "P" : {
+    "no_weather" : "gbt_wind",
+    "weather" : "gbt_wind"
+  },
+  "Q" : {
+    "no_weather" : "gbt_wind",
+    "weather" : "gbt_wind",
+    "weather/forecast" : "gbt_wind"
+  }
+}

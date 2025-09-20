@@ -1,0 +1,14 @@
+id,country,generation,id_type,installed_capacity,info,last_updated,latitude,latitude_nwp,longitude,longitude_nwp,net_power_types,source_nwp
+inst11,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst12,portugal,1,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,998,998,PQ,meteogalicia
+inst13,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,998,998,PQ,meteogalicia
+inst14,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst15,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst16,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,0,0,0,0,PQ,meteogalicia
+inst17,portugal,0,load,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,997,997,PQ,meteogalicia
+inst21,portugal,1,wind,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst22,portugal,1,wind,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,997,997,PQ,meteogalicia
+inst23,portugal,1,wind,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst31,portugal,1,solar,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia
+inst32,portugal,1,solar,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,997,997,PQ,meteogalicia
+inst33,portugal,1,solar,16.5,"{'rest_api_identifier': 'inst1'}",2020-02-07 13:15,999,999,999,999,PQ,meteogalicia

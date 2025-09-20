@@ -1,0 +1,5 @@
+.pytest_cache/
+.idea/
+/tasks/forecast_tasks/files/
+/tasks/forecast/files/
+/core/forecast/files

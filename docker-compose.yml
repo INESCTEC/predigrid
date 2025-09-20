@@ -1,0 +1,77 @@
+version: '3'
+
+services:
+  # ===========================================================================
+  nginx:
+    build:
+      context: ./src/rest_api
+      dockerfile: ./nginx/Dockerfile
+    image: restapi_nginx
+    container_name: predigrid_restapi_nginx
+    env_file: ./ENV/rest_api/.env
+    restart: unless-stopped
+    ports:
+      - "5000:80"
+    depends_on:
+      - flask_app
+    networks:
+      - network
+  # ===========================================================================
+  flask_app:
+    build:
+      context: ./src/rest_api
+      dockerfile: ./flask_app/Dockerfile
+    image: restapi_flaskapp
+    container_name: predigrid_restapi_flaskapp
+    env_file: ./ENV/rest_api/.env
+    restart: unless-stopped
+    volumes:
+      - flask_app:/app/files
+    networks:
+      - network
+  # ===========================================================================
+  data_disposer:
+    build:
+      context: ./src/data_disposer
+      dockerfile: Dockerfile
+    image: data_disposer
+    container_name: predigrid_data_disposer
+    env_file: ./ENV/data_disposer/.env
+    volumes:
+      - data_disposer:/app/files
+    networks:
+      - network
+  # ===========================================================================
+  weather:
+    build:
+      context: ./src/nwp_collector
+      dockerfile: Dockerfile
+    image: nwp_collector
+    container_name: predigrid_nwp_collector
+    env_file: ./ENV/nwp_collector/.env
+    volumes:
+      - weather:/app/files
+    networks:
+      - network
+  # ===========================================================================
+  metrics:
+    build:
+      context: ./src/metrics
+      dockerfile: Dockerfile
+    image: metrics
+    container_name: predigrid_metrics
+    env_file: ./ENV/metrics/.env
+    volumes:
+      - metrics:/app/logs
+    networks:
+      - network
+
+volumes:
+  flask_app:
+  data_disposer:
+  weather:
+  metrics:
+
+networks:
+  network:
+    driver: bridge

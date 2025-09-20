@@ -1,0 +1,18 @@
+{
+  "P" : {
+    "D-1/D-7" : "gbt",
+    "D-2/D-7" : "gbt",
+    "D-3/D-7" : "gbt",
+    "D-7" : "gbt",
+    "D-7/no_weather" : "lqr",
+    "backup_no_weather" : "gbt",
+    "backup_weather" : "gbt"
+  },
+  "Q" : {
+    "D-7" : "gbt",
+    "D-7/forecast" : "gbt",
+    "D-7/no_weather" : "lqr",
+    "backup_no_weather" : "gbt",
+    "backup_weather" : "gbt"
+  }
+}

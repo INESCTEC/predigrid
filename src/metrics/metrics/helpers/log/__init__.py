@@ -1,0 +1,1 @@
+from .log import create_log, just_console_log

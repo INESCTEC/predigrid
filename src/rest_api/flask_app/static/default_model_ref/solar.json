@@ -1,0 +1,11 @@
+{
+  "P" : {
+    "no_weather" : "gbt_solar",
+    "weather" : "gbt_solar"
+  },
+  "Q" : {
+    "no_weather" : "gbt_solar",
+    "weather" : "gbt_solar",
+    "weather/forecast" : "gbt_solar"
+  }
+}

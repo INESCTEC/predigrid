@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+python run_netload.py
+python run_cleanse.py

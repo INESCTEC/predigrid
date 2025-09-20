@@ -257,3 +257,4 @@ If you have any questions or suggestions, please contact the developers at:
 
 - **José Andrade** <jose.r.andrade@inesctec.pt>
 - **João Viana** <joao.p.viana@inesctec.pt>
+- **André Garcia** <andre.f.garcia@inesctec.pt>
